@@ -1,2 +1,2 @@
 # FileUploader
-Continuous file upload script for php
+Continuous file upload library for php
