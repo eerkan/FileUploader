@@ -1,7 +1,8 @@
 <?php
     ini_set('max_execution_time','3000');
     require_once("fileuploader.php");
-    $fu=new FileUploader(1*FileUploader::MB,'uploads/temp_files','uploads','key',
+    $upload_dir='uploads/temp_files';
+    $fu=new FileUploader(1*FileUploader::MB,$upload_dir,'uploads','key',
         function($upload){
             switch($upload['operation']){
                 case 'FILE_UPLOAD_REQUEST':
